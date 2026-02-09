@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaLocationDot } from 'react-icons/fa6';
 import SelectorGroup from '../../Selector/SelectorGroup';
 import SelectorOption from '../../Selector/SelectorOption';
