@@ -11,4 +11,4 @@ export interface Movie{
     categoria: Categoria;
     censura: Censura;
     duracao: number;
-}
+};

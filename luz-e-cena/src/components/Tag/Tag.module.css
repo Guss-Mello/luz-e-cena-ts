@@ -28,8 +28,8 @@
   background-color: var(--amarelo);
 }
 
-.catorze {
-  background-color: var(--coral);
+.quatorze {
+  background-color: orange;
 }
 
 .dezesseis {
@@ -38,4 +38,5 @@
 
 .dezoito {
   background-color: var(--preto);
+  color: var(--branco);
 }
