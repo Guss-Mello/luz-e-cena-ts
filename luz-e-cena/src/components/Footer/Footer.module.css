@@ -56,11 +56,11 @@
 }
 
 .desenvolvimento {
-  padding: var(--padding-m) var(--padding-s);
+  padding: var(--padding-s) var(--padding-s);
   background-color: var(--cinza-claro);
   color: var(--preto);
   text-align: center;
   font-family: var(--fonte-texto);
   font-weight: 400;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
 }
