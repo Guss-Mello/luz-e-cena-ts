@@ -20,7 +20,7 @@ const CardMovie = (props: Movie) => {
                     </div>
 
                     <div className={styles.linha2}>
-                        <p>{duracao}</p>
+                        <p>{duracao} Min.</p>
                         <Tag value={censura}/>
                     </div>
 
