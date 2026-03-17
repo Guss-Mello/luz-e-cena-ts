@@ -28,9 +28,7 @@ const MovieSection = () => {
                         } 
                         placeholder='Buscar filmes...' 
                     />
-                    <Button variant='icon' onClick={handleSearch}>
-                        <FaSearch />
-                    </Button>
+                    <FaSearch />
                 </FieldSet>
 
                 <h1 className={styles.titulo}>Em cartaz</h1>
