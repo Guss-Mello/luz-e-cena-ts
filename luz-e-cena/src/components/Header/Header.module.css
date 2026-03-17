@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   gap: var(--gap-xl);
-  background-color: var(--branco);
   padding: var(--padding-s) 0;
 }
 
@@ -17,4 +16,8 @@
   font-family: var(--fonte-texto);
   font-size: var(--font-size-m);
   font-weight: 400;
+}
+
+:global([data-theme='dark']) .icones {
+    color: #ffffff; /* Cor para o tema Escuro */
 }

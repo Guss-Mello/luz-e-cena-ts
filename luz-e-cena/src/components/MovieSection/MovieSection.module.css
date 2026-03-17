@@ -11,4 +11,9 @@
     font-family: var(--fonte-titulo);
     font-size: var(--font-size-xl);
     align-self: flex-start;
+    transition: color 0.3s ease;
+}
+
+:global([data-theme='dark']) .titulo {
+    color: #ffffff; /* Cor para o tema Escuro */
 }

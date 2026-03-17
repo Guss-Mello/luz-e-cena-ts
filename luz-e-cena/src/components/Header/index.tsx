@@ -4,14 +4,18 @@ import HeaderFormFilters from "./components/HeaderFormFilters";
 import HeaderLinks from "./components/HeaderLinks";
 import HeaderList from "./components/HeaderList";
 import HeaderListItem from "./components/HeaderListItem";
+import useDarkMode from "../../hooks/useDarkMode";
 
 const Header = () => {
+  const {mounted, resolvedTheme} = useDarkMode();
+
   return (
-    <header>
+    // Adicionamos uma classe para que o CSS do tema possa estilizá-lo
+    <header className="main-header">
       <HeaderList>
 
         <HeaderListItem>
-          <Logo src="../Logo_Favicon/Logo_azul.png" />
+          <Logo src={mounted && resolvedTheme === 'dark' ? "../Logo_Favicon/Logo.png" : "../Logo_Favicon/Logo_azul.png"} />
         </HeaderListItem>
 
         <HeaderListItem>

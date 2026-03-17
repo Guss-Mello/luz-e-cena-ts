@@ -1,6 +1,11 @@
 .link{
     text-decoration: none;
-    color: var(--preto);
+    color: var(--preto); /* Cor padrão (Claro) */
+    transition: color 0.3s ease;
+}
+
+:global([data-theme='dark']) .link {
+    color: #ffffff; /* Cor para o tema Escuro */
 }
 
 .link:hover{

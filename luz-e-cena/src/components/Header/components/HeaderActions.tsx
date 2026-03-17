@@ -1,29 +1,25 @@
-import { useState } from 'react';
 import Button from '../../Button';
 import { HiOutlineShoppingCart, HiOutlineUser } from 'react-icons/hi';
-import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
+import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
+import useDarkMode from '../../../hooks/useDarkMode';
 
 const HeaderActions = () => {
+
+    const {isDarkMode, setTheme} = useDarkMode();
   
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-  return (
-    <div>
-        <Button variant="icon">
-            <HiOutlineShoppingCart />
-        </Button>
-                <Button variant="icon">
-            <HiOutlineUser />
-        </Button>
-        <Button variant="icon" onClick={toggleDarkMode}>
-          {isDarkMode ? <MdDarkMode /> : <MdOutlineDarkMode />}
-        </Button>
-    </div>
-  )
+    return (
+        <div>
+            <Button variant="icon">
+                {isDarkMode ? <HiOutlineShoppingCart color='#f0f0f0'/> : <HiOutlineShoppingCart color='#000000'/>}
+            </Button>
+            <Button variant="icon">
+                {isDarkMode ? <HiOutlineUser color='#f0f0f0'/> : <HiOutlineUser color='#000000'/>}
+            </Button>
+            <Button variant="icon" onClick={() => setTheme(isDarkMode ? 'light' : 'dark')}>
+                {isDarkMode ? <MdOutlineLightMode color='#f0f0f0'/> : <MdDarkMode color='#000000'/>}
+            </Button>
+        </div>
+    )
 }
 
 export default HeaderActions;
