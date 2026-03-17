@@ -15,5 +15,5 @@
 }
 
 :global([data-theme='dark']) .titulo {
-    color: #ffffff; /* Cor para o tema Escuro */
+    color: var(--cinza-claro); /* Cor para o tema Escuro */
 }
