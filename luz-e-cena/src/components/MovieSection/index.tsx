@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import styles from './MovieSection.module.css';
 import FieldSet from '../FieldSet';
 import InputText from '../InputText';
-import Button from '../Button';
 import { FaSearch } from 'react-icons/fa';
 import MovieList from '../MovieList';
 import useFetchMovies from '../../hooks/useFetchMovies';
